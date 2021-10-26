@@ -25,8 +25,16 @@ public class ShoppingController {
         return this.shoppingRepository.findById(id).get();
     }
 
+    //Save shopping
     @RequestMapping(method = RequestMethod.POST, value = "/shopping")
     public Shopping saveShopping(@RequestBody Shopping shopping){
         return this.shoppingRepository.save(shopping);
+    }
+
+    //Update shopping by id
+    @RequestMapping(method = RequestMethod.POST, value = "/shopping/edit/{id}")
+    public Shopping saveShoppingById (@PathVariable (value = "id") Long id, @RequestBody Shopping shopping){
+        shopping.setId(id);
+        return shoppingRepository.save(shopping);
     }
 }

@@ -21,5 +21,5 @@ public class Shopping {
     private String product;
     private double unitWeight;
     private double priceForUnitWeight;
-    private double priceOfPurchase;
+    private double priceTotal;
 }

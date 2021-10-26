@@ -1,2 +1,3 @@
-# rest-api-supermarket
- Rest API SuperMarket for study
+# Rest-API-Supermarket
+
+Rest API SuperMarket for study
